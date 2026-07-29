@@ -1877,3 +1877,38 @@ Extra Small Phones
         transform: translateY(-8px);
     }
 }
+
+
+/* Extra Small Phones (320px - 360px) */
+@media screen and (max-width: 360px) {
+
+    .back-btn,
+    .next-btn {
+        position: fixed;
+        top: 4px;
+        padding: 3px 5px;
+        font-size: 8px;
+        font-weight: 60;
+        border-radius: 5px;
+        z-index: 99;
+        max-width: 42%;
+    }
+
+    .back-btn {
+        left: 5px;
+    }
+
+    .next-btn {
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .back-btn,
+    .next-btn {
+        padding: 3px 5px;
+        font-size: 8px;
+        border-radius: 5px;
+    }
+}
