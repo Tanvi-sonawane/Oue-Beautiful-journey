@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧸Happy Anniversary❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="html" href="song.html">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="passwordScreen">
+        <!-- Password Section -->
+        <div class="password-box">
+
+            <h1>🔒Our Beautiful Love❤️</h1>
+
+            <p>Enter Our Anniversary Date💍</p>
+
+            <input type="password" id="passwordInput" placeholder="DD-MM-YYYY">
+
+            <button onclick="checkPassword()">
+                Unlock Our Love❤️
+            </button>
+
+            <p id="error"></p>
+        </div>
+    </div>
+    <!-- Loading Screen -->
+
+    <button onclick="goBack()" class="back-btn">
+        ← ❤️🧸Back🧸✨
+    </button>
+    <button onclick="goNext()" class="next-btn">
+        ❤️🧸Next🧸✨
+    </button>
+    <!-- Hero Section -->
+
+    <section id="hero">
+
+        <div class="hero-content">
+
+            <h3>✨Forever & Always✨</h3>
+
+            <h1>Happy anniversary</h1>
+
+            <h2>My Dear Hubbyyyyy....❤️</h2>
+
+            <p>
+                Every moment spent with you became my favorite memory.
+            </p>
+            <!-- Couple Popup -->
+            <div id="couplePopup" class="couple-popup">
+                <img src="images/couple.jpg" alt="Couple">
+            </div>
+
+            <button id="startBtn">
+                Begin Our Journey ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Timeline -->
+
+    <section id="timeline">
+
+        <h1>Our Journey❤️</h1>
+
+        <div class="timeline-box">
+            <div class="event">
+                <img src="images/praposal.jpg" class="event-img">
+                <h2>Praposal💕</h2>
+                <p>The moment our forever began❤️.</p>
+            </div>
+
+            <div class="event" onclick="showGallery('meeting')">
+                <img src="images/first_meet.jpeg" class="event-img">
+                <h2>🌸First Meeting🌸</h2>
+                <p> 👦🌷We Are First time meet us🌷👧</p>
+            </div>
+
+
+
+            <div class="event">
+                <img src="images/first_date.jpg" class="event-img">
+                <h2>First Date💖</h2>
+                <p> 👫🌹Our First date </p>
+
+            </div>
+            <div class="event">
+                <img src="images/best_moment.jpeg" class="event-img">
+                <h2>Best Moment🎁</h2>
+                <p>One beautiful moment,a thousand beautiful memories. 💞📸</p>
+            </div>
+            <div class="event">
+                <img src="images/cellibration.jpeg" class="event-img">
+                <h2>💕Cellibration💕</h2>
+                <p>Cheers to the beautiful memories we've made and the countless more to come. 🥂✨"</p>
+            </div>
+            <div class="event">
+                <img src="images/today.jpeg" class="event-img">
+                <h2>🌍My World💕</h2>
+                <p>Still falling in love with you every single day❤️🥂</p>
+            </div>
+
+            <div class="event">
+                <img src="images/today2.jpg" class="event-img">
+                <h2>💞 Together Always💕</h2>
+                <p>"Every love story is beautiful,but ours is my favorite❤️🥂"</p>
+            </div>
+
+            <div class="event">
+                <img src="images/today3.jpeg" class="event-img">
+                <h2>💕With Bappa💕</h2>
+                <p>With Bappa's blessings,our love grows stronger every day🙏❤️</p>
+            </div>
+
+            <div class="event">
+                <img src="images/today4.jpg" class="event-img">
+                <h2>❤️Better Together💕</h2>
+                <p>Here's to us, to forever,and to every beautiful moment yet to come🥂❤️</p>
+            </div>
+
+            <div class="event">
+                <img src="images/today5.jpg" class="event-img">
+                <h2>✨Soulmates💕</h2>
+                <p>🥰Two souls,one heart,one beautiful forever❤️</p>
+            </div>
+
+            <div class="event">
+                <img src="images/today6.jpeg" class="event-img">
+                <h2>🌹Endless Love💕</h2>
+                <p>No matter what life brings,my love for you will never fade🌹❤️</p>
+            </div>
+
+            <div class="event">
+                <img src="images/today7.jpg" class="event-img">
+                <h2>🥰My Favorite Person💕</h2>
+                <p>🥰My heart found its home in you🏡❤️</p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <section id="gallery">
+
+        <h1>Our Beautiful Memories 📸</h1>
+
+        <div class="gallery-grid" id="gallerygrid">
+
+            <img src="images/meet1.png">
+            <img src="images/meet2.jpg">
+            <img src="images/meet3.jpg">
+            <img src="images/meet4.jpg">
+            <img src="images/meet5.jpeg">
+            <img src="images/meet6.jpg">
+
+        </div>
+
+        <button class="nextBtn">
+            Next ❤️
+        </button>
+
+    </section>
+
+    <!-- Love Letter -->
+
+    <section id="letter">
+
+        <h1>💌 My Letter To You</h1>
+
+        <p id="typing"></p>
+
+        <button class="nextBtn2">
+            Continue ❤️
+        </button>
+
+    </section>
+
+    <!-- Reasons -->
+
+    <section id="reasons">
+
+        <h1>Reasons Why I Love You ❤️</h1>
+
+        <div class="cards">
+
+            <div class="card">🌍 You Are My Safe Place</div>
+            <div class="card">🤗 Your Warm Hugs</div>
+            <div class="card">💞 You Always Understand Me</div>
+            <div class="card">✨ Your Cute Little Habits</div>
+            <div class="card">🥰 Your Silly Jokes</div>
+            <div class="card">🧸 You Are My Comfort Person</div>
+            <div class="card">💖 You Make My Heart Feel Complete</div>
+            <div class="card">♾️ Forever Isn't Enough With You</div>
+            <div class="card">👑 Because You Are My Favorite Human</div>
+            <div class="card">💘 Every Moment With You Feels Magical</div>
+            <div class="card">❤️ Everything About You</div>
+            <div class="card">❤️ Because Loving You Is The Best Decision Of My Life</div>
+
+        </div>
+
+        <button class="nextBtn3">
+            One Last Question ❤️
+        </button>
+
+    </section>
+
+    <!-- Question -->
+
+    <section id="question">
+
+        <h1>
+
+            Will You Stay With Me Forever?
+
+            ❤️
+
+        </h1>
+
+        <div class="buttons">
+
+            <button id="yesBtn">
+
+                YES ❤️
+
+            </button>
+
+            <button id="noBtn">
+
+                NO 😜
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Final Page -->
+
+    <section id="final">
+
+        <h1>
+
+            Happy Anniversary ❤️
+
+        </h1>
+
+        <h2>
+
+            My Dear Hubby...❤️
+
+        </h2>
+
+        <p>
+
+            My Love... ❤️
+
+            You are the most beautiful part of my life. 🌍❤️
+            Every smile of yours makes my heart happier, and every hug feels like home. 🤗💞
+
+            No matter where life takes us, I'll always choose you, love you, and stand beside you. 💍♾️
+
+            Happy Anniversary, My Forever Love. ❤️✨
+
+        </p>
+
+        <button onclick="location.reload()">
+
+            Replay Our Story ❤️
+
+        </button>
+
+    </section>
+
+    <!-- Floating Hearts -->
+
+    <div id="hearts"></div>
+
+    <!-- Background Music -->
+
+    <audio id="music" loop>
+
+        <source src="music/song.mp3" type="audio/mp3">
+
+    </audio>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
